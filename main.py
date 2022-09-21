@@ -15,3 +15,13 @@
 
 # 5. The system will tell us if the word “python” is inside the text. This part can be a bit complicated to imagine, but I'll give you a hint: you can use Booleans to make your enquiry and a dictionary to find ways to express your answer.
 
+
+ask_user=input("Input text:")
+letter1=input("Select a letter:")
+letter2=input("Select a letter:")
+letter3=input("Select a letter:")
+
+text=ask_user
+
+
+
