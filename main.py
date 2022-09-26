@@ -15,13 +15,56 @@
 
 # 5. The system will tell us if the word “python” is inside the text. This part can be a bit complicated to imagine, but I'll give you a hint: you can use Booleans to make your enquiry and a dictionary to find ways to express your answer.
 
-
+# make 
 ask_user=input("Input text:")
-letter1=input("Select a letter:")
-letter2=input("Select a letter:")
-letter3=input("Select a letter:")
-
-text=ask_user
+letter10=input("Select a letter:")
+letter20=input("Select a letter:")
+letter30=input("Select a letter:")
 
 
 
+letter1=letter10.lower()
+letter2=letter20.lower()
+letter3=letter30.lower()
+#step 1
+list1=[str(letter1), str(letter2), str(letter3)]
+
+text=str(ask_user)
+list2=text.split()
+
+
+
+# print(list1)
+# print(list2)
+
+text2=text.lower()
+
+print("Letter 1 appears " +str(text2.count(letter1))+ " times.")
+print("Letter 2 appears " +str(text2.count(letter2))+ " times.")
+print("Letter 3 appears " +str(text2.count(letter3))+ " times.")
+
+
+# Step 2
+print('The length of the text is '+ str(len(list2)) + ' words.')
+
+
+# Step 3
+last_char = text2[-1]
+print('Last character : ', last_char)
+first_char = text2[0]
+print('First character : ', first_char)
+
+# Step 4
+list2.reverse()
+print(' '.join(list2))
+
+
+
+# Step5
+word = 'python'
+
+if word in text2:
+    print('Word found.')
+
+if word not in text2:
+  print("Word not found.")
